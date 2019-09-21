@@ -1,0 +1,29 @@
+   const data = useStaticQuery(graphql`
+    query{
+        allMarkdownRemark{
+            edges{
+              node{
+                frontmatter{
+                  title
+                  date
+                }
+              }
+            }
+          }
+    }
+  `)
+
+  const data = useStaticQuery(graphql` 
+    query{
+        allMarkdownRemark{
+        edges{
+          node{
+            frontmatter{
+              title
+              date
+            }
+          }
+        }
+      }
+    }}
+    `)
